@@ -46,8 +46,7 @@ p {
 
 .container {
     display: flex;
-    flex-direction: column;
-    /* Änderung hier */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -78,6 +77,7 @@ p {
 
     .container {
         flex-direction: column;
+        ;
         /* Stellt sicher, dass bei kleinen Bildschirmen vertikal ausgerichtet wird */
     }
 }
