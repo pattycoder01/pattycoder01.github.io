@@ -64,14 +64,17 @@ p {
 @media (max-width: 768px) {
     h1 {
         font-size: 48px;
+        font-family: 'Sans-serif';
     }
 
     p {
         font-size: 18px;
+        font-family: 'Sans-serif';
     }
 
     .btn {
         padding: 10px 24px;
         font-size: 12px;
+        font-family: 'Sans-serif';
     }
 }
