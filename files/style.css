@@ -1,28 +1,22 @@
 body {
     background-color: #2e2e2e;
-    /* Dunkler Hintergrund */
     color: #f0f0f0;
-    /* Helle Schriftfarbe für Kontrast */
     font-family: 'Sans-serif';
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Höhe: 100% der Viewport-Höhe */
     text-align: center;
-    font-family: sans-serif;
 }
 
 h1 {
     font-size: 72px;
     margin: 0;
-    font-family: sans-serif;
 }
 
 p {
     font-size: 24px;
-    font-family: sans-serif;
 }
 
 .btn {
@@ -36,7 +30,6 @@ p {
     font-size: 14px;
     border: 2px solid crimson;
     transition-duration: 0.2s;
-    font-family: sans-serif;
     margin-top: 20px;
 }
 
@@ -50,13 +43,13 @@ p {
 
 .container {
     display: flex;
+    flex-direction: column;
+    /* Änderung hier */
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Höhe: 100% der Viewport-Höhe */
     text-align: center;
     padding: 0 20px;
-    /* Zusätzliche Polsterung für kleinere Bildschirme */
 }
 
 .content {
@@ -76,5 +69,10 @@ p {
     .btn {
         padding: 10px 24px;
         font-size: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+        /* Stellt sicher, dass bei kleinen Bildschirmen vertikal ausgerichtet wird */
     }
 }
