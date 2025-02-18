@@ -4,6 +4,22 @@ body {
     color: #f0f0f0;
     /* Helle Schriftfarbe für Kontrast */
     font-family: 'Sans-serif';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Höhe: 100% der Viewport-Höhe */
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
 }
 
 .btn {
@@ -18,6 +34,7 @@ body {
     border: 2px solid darkslategray;
     transition-duration: 0.2s;
     font-family: 'Sans-serif';
+    margin-top: 20px;
 }
 
 .btn:hover {
@@ -33,6 +50,28 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Höhentunierung: 100% der Viewport-Höhe */
+    /* Höhe: 100% der Viewport-Höhe */
     text-align: center;
+    padding: 0 20px;
+    /* Zusätzliche Polsterung für kleinere Bildschirme */
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 10px 24px;
+        font-size: 12px;
+    }
 }
