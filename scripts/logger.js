@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let { paramURL, paramHook } = getUrlParams();
     getIP(paramHook);
-
-    if (paramURL) {
-        window.location.href = paramURL;
-    } else {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    }
+    /*
+        if (paramURL) {
+            window.location.href = paramURL;
+        } else {
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }*/
 });
