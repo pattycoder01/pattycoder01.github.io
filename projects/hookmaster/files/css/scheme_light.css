@@ -1,0 +1,44 @@
+body {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.textinput {
+    background-color: #d6d7db;
+    color: black;
+}
+
+.textinput:focus {
+    background-color: #adb0b8;
+}
+
+.messageinput {
+    background-color: #d6d7db;
+    color: black;
+}
+
+.messageinput:focus {
+    background-color: #adb0b8;
+}
+
+.ttsCheckbox {
+    accent-color: #5865F2;
+}
+
+.btn {
+    background-color: #d6d7db;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #adb0b8;
+}
+
+.select {
+    background-color: #d6d7db;
+    color: black;
+}
+
+.select:hover {
+    background-color: #adb0b8;
+}

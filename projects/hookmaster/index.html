@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HookMaster</title>
+    <link rel="icon" href="files/icons/favicon.png">
+    <link id="style" rel="stylesheet" href="files/css/general.css">
+    <link id="colorscheme" rel="stylesheet" href="files/css/scheme_dark.css">
+</head>
+
+<body>
+    <h1>HookMaster by PattyCoder</h1>
+    <p class="text">Type in Webhook URL</p>
+    <div id="urlInput">
+        <input type="url" size="80" id="webhookURL" placeholder="Webhook URL" class="textinput"></textarea>
+    </div>
+
+    <p class="text">Type in custom name (optional)</p>
+    <div id="nameInput">
+        <input type="text" maxlength="80" id="webhookName" placeholder="Name" value="HookMaster"
+            class="textinput"></textarea>
+    </div>
+
+    <p class="text">Type in custom avatar URL (optional)</p>
+    <div id="avatarInput">
+        <input type="url" size="80" id="avatarURL" placeholder="Avatar URL" class="textinput"></textarea>
+    </div>
+
+    <p class="text">Type in message content</p>
+    <div id="msgInput">
+        <textarea id="messageContent" placeholder="Your message..." class="messageinput"></textarea>
+    </div>
+
+    <div id="checkboxInput">
+        <input type="checkbox" id="ttsEnabled" class="ttsCheckbox">TTS</input>
+    </div>
+
+    <div id="sendButton">
+        <button id="sendMessage" class="btn">Send message</button>
+    </div>
+    <h3>Templates</h3>
+
+    <div id="templateInput">
+        <select id="templateSelector" name="templates" class="select">
+            <option value="0" selected>&lt;select template&gt;</option>
+            <option value="1">Important Announcement</option>
+        </select>
+        <button id="loadTemplate" class="btn">Load template</button>
+    </div>
+
+    <h3>Import/Export Data</h3>
+
+    <div id="dataInput">
+        <button id="importData" class="btn">Import data</button>
+        <button id="exportData" class="btn">Export data</button>
+    </div>
+
+    <div id="themeInput">
+        <button id="toggleMode" class="btn" style="margin-top: 30px">Mode</button>
+    </div>
+
+    <script id="hooksender" src="files/scripts/hooksender.js"></script>
+    <script id="templateloader" src="files/scripts/templateloader.js"></script>
+    <script id="porttool" src="files/scripts/porttool.js"></script>
+    <script id="modetoggle" src="files/scripts/modetoggle.js"></script>
+    <script id="loader" src="files/mods/loader.js"></script>
+</body>
+
+</html>
