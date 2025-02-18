@@ -41,7 +41,7 @@ p {
     background-color: slateblue;
     color: white;
     border: 2px solid slateblue;
-    box-shadow: 5px 5px 10px MediumSlateBlue;
+    box-shadow: 5px 5px 10px darkslateblue;
     transition-duration: 0.5s;
 }
 
@@ -64,17 +64,17 @@ p {
 @media (max-width: 768px) {
     h1 {
         font-size: 48px;
-        font-family: 'Sans-serif';
+        font-family: sans-serif;
     }
 
     p {
         font-size: 18px;
-        font-family: 'Sans-serif';
+        font-family: sans-serif;
     }
 
     .btn {
         padding: 10px 24px;
         font-size: 12px;
-        font-family: 'Sans-serif';
+        font-family: sans-serif;
     }
 }
