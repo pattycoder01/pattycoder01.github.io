@@ -11,15 +11,18 @@ body {
     height: 100vh;
     /* Höhe: 100% der Viewport-Höhe */
     text-align: center;
+    font-family: sans-serif;
 }
 
 h1 {
     font-size: 72px;
     margin: 0;
+    font-family: sans-serif;
 }
 
 p {
     font-size: 24px;
+    font-family: sans-serif;
 }
 
 .btn {
@@ -33,7 +36,7 @@ p {
     font-size: 14px;
     border: 2px solid crimson;
     transition-duration: 0.2s;
-    font-family: 'Sans-serif';
+    font-family: sans-serif;
     margin-top: 20px;
 }
 
@@ -64,17 +67,14 @@ p {
 @media (max-width: 768px) {
     h1 {
         font-size: 48px;
-        font-family: sans-serif;
     }
 
     p {
         font-size: 18px;
-        font-family: sans-serif;
     }
 
     .btn {
         padding: 10px 24px;
         font-size: 12px;
-        font-family: sans-serif;
     }
 }
