@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #textArea {
+            width: 80%;
+            height: 500px;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        #fileName {
+            width: 80%;
+            height: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: crimson;
+            color: white;
+            border: 3px solid crimson;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 3px solid crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Text Editor</h1>
+    <textarea placeholder="Your file name..." id="fileName"></textarea><br>
+    <textarea id="textArea" placeholder="Your text here..."></textarea><br>
+    <button id="downloadBtn">Download</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            var text = document.getElementById('textArea').value;
+            var blob = new Blob([text], { type: 'text/plain' });
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            if (document.getElementById('fileName').value == "") { document.getElementById('fileName').value = "file" }
+            link.download = document.getElementById('fileName').value + ".txt";
+            link.click();
+            if (document.getElementById('fileName').value == "file") { document.getElementById('fileName').value = "" }
+        });
+    </script>
+
+</body>
+
+</html>
