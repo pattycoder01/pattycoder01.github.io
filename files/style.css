@@ -23,7 +23,7 @@ p {
 }
 
 .btn {
-    background-color: darkslategray;
+    background-color: crimson;
     border-radius: 10px;
     color: white;
     padding: 15px 32px;
@@ -31,17 +31,17 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    border: 2px solid darkslategray;
+    border: 2px solid crimson;
     transition-duration: 0.2s;
     font-family: 'Sans-serif';
     margin-top: 20px;
 }
 
 .btn:hover {
-    background-color: darkslategray;
+    background-color: slateblue;
     color: white;
-    border: 2px solid darkslategray;
-    box-shadow: 5px 5px 10px #0d518c;
+    border: 2px solid slateblue;
+    box-shadow: 5px 5px 10px MediumSlateBlue;
     transition-duration: 0.5s;
 }
 
