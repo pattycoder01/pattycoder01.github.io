@@ -1,3 +1,11 @@
+body {
+    background-color: #2e2e2e;
+    /* Dunkler Hintergrund */
+    color: #f0f0f0;
+    /* Helle Schriftfarbe für Kontrast */
+    font-family: 'Sans-serif';
+}
+
 .btn {
     background-color: darkslategray;
     border-radius: 10px;
@@ -7,14 +15,24 @@
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    border: 2px solid #1577cf;
+    border: 2px solid darkslategray;
     transition-duration: 0.2s;
+    font-family: 'Sans-serif';
 }
 
 .btn:hover {
-    background-color: #004482;
-    color: #f0eee6;
-    border: 2px solid #004482;
+    background-color: darkslategray;
+    color: white;
+    border: 2px solid darkslategray;
     box-shadow: 5px 5px 10px #0d518c;
     transition-duration: 0.5s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Höhentunierung: 100% der Viewport-Höhe */
+    text-align: center;
 }
