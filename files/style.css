@@ -1,0 +1,20 @@
+.btn {
+    background-color: darkslategray;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border: 2px solid #1577cf;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: #004482;
+    color: #f0eee6;
+    border: 2px solid #004482;
+    box-shadow: 5px 5px 10px #0d518c;
+    transition-duration: 0.5s;
+}
