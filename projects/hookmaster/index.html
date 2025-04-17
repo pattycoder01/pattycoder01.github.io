@@ -1,63 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HookMaster</title>
     <link rel="icon" href="files/icons/favicon.png" type="image/png">
-    <link id="style" rel="stylesheet" href="files/css/general.css">
-    <link id="colorscheme" rel="stylesheet" href="files/css/scheme_dark.css">
+    <link id="style" rel="stylesheet" href="files/css/dark.css">
 </head>
 
 <body>
-    <h1>HookMaster by PattyCoder</h1>
-    <p class="text">Type in Webhook URL</p>
-    <div id="urlInput">
-        <input type="url" size="80" id="webhookURL" placeholder="Webhook URL" class="textinput"></textarea>
-    </div>
+    <div class="container">
+        <header>
+            <h1>HookMaster by PattyCoder</h1>
+        </header>
+        <main>
+            <form id="hookForm">
+                <!-- Webhook URL -->
+                <section class="section">
+                    <label for="webhookURL" class="label">Webhook URL</label>
+                    <input type="url" id="webhookURL" placeholder="Webhook URL" class="input" required>
+                </section>
 
-    <p class="text">Type in custom name (optional)</p>
-    <div id="nameInput">
-        <input type="text" maxlength="80" id="webhookName" placeholder="Name" value="HookMaster"
-            class="textinput"></textarea>
-    </div>
+                <!-- Custom Name -->
+                <section class="section">
+                    <label for="webhookName" class="label">
+                        Custom Name <small>(optional)</small>
+                    </label>
+                    <input type="text" id="webhookName" placeholder="Name" maxlength="80" value="HookMaster"
+                        class="input">
+                </section>
 
-    <p class="text">Type in custom avatar URL (optional)</p>
-    <div id="avatarInput">
-        <input type="url" size="80" id="avatarURL" placeholder="Avatar URL" class="textinput"></textarea>
-    </div>
+                <!-- Custom Avatar URL -->
+                <section class="section">
+                    <label for="avatarURL" class="label">
+                        Custom Avatar URL <small>(optional)</small>
+                    </label>
+                    <input type="url" id="avatarURL" placeholder="Avatar URL" class="input">
+                </section>
 
-    <p class="text">Type in message content</p>
-    <div id="msgInput">
-        <textarea id="messageContent" placeholder="Your message..." class="messageinput"></textarea>
-    </div>
+                <!-- Message -->
+                <section class="section message-section">
+                    <label for="messageInput" class="label">Nachricht oder Datei-Upload</label>
+                    <div class="messageBox">
+                        <button type="button" class="fileUploadButton" aria-label="Upload File">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 337 337">
+                                <circle stroke-width="20" stroke="#6c6c6c" fill="none" r="158.5" cy="168.5" cx="168.5">
+                                </circle>
+                                <path stroke-linecap="round" stroke-width="25" stroke="#6c6c6c" d="M167.759 79V259">
+                                </path>
+                                <path stroke-linecap="round" stroke-width="25" stroke="#6c6c6c" d="M79 167.138H259">
+                                </path>
+                            </svg>
+                            <span class="tooltip">Add an image</span>
+                        </button>
+                        <input type="file" id="file" name="file" hidden>
+                        <textarea id="messageInput" placeholder="Message..." rows="1"></textarea>
+                        <button type="button" id="sendButton" class="sendButton" aria-label="Send Message">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 664 663">
+                                <path fill="none"
+                                    d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888">
+                                </path>
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="33.67"
+                                    stroke="#6c6c6c"
+                                    d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <span id="fileNameDisplay" class="fileName">no file</span>
+                    <div id="checkboxInput" class="checkboxGroup">
+                        <input type="checkbox" id="ttsEnabled" class="ttsCheckbox">
+                        <label for="ttsEnabled" class="small-label">TTS</label>
+                    </div>
+                </section>
+            </form>
 
-    <div id="checkboxInput">
-        <input type="checkbox" id="ttsEnabled" class="ttsCheckbox">TTS</input>
-    </div>
+            <!-- Templates -->
+            <section class="section templates-section">
+                <h3>Templates</h3>
+                <div id="templateInput" class="templatesGroup">
+                    <select id="templateSelector" name="templates" class="select">
+                        <option value="0" selected>&lt;select template&gt;</option>
+                        <option value="1">Important announcement</option>
+                    </select>
+                    <button type="button" id="loadTemplate" class="btn">Load template</button>
+                </div>
+            </section>
 
-    <div id="sendButton">
-        <button id="sendMessage" class="btn">Send message</button>
-    </div>
-    <h3>Templates</h3>
+            <!-- Import/Export -->
+            <section class="section data-section">
+                <h3>Import/Export Data</h3>
+                <div id="dataInput" class="dataGroup">
+                    <button type="button" id="importData" class="btn">Import data</button>
+                    <button type="button" id="exportData" class="btn">Export data</button>
+                </div>
+            </section>
+        </main>
 
-    <div id="templateInput">
-        <select id="templateSelector" name="templates" class="select">
-            <option value="0" selected>&lt;select template&gt;</option>
-            <option value="1">Important Announcement</option>
-        </select>
-        <button id="loadTemplate" class="btn">Load template</button>
-    </div>
-
-    <h3>Import/Export Data</h3>
-
-    <div id="dataInput">
-        <button id="importData" class="btn">Import data</button>
-        <button id="exportData" class="btn">Export data</button>
-    </div>
-
-    <div id="themeInput">
-        <button id="toggleMode" class="btn" style="margin-top: 30px">Mode</button>
+        <footer>
+            <div id="themeInput" class="themeGroup">
+                <button type="button" id="toggleMode" class="btn">Mode</button>
+            </div>
+        </footer>
     </div>
 
     <script id="hooksender" src="files/scripts/hooksender.js"></script>
@@ -65,6 +110,25 @@
     <script id="porttool" src="files/scripts/porttool.js"></script>
     <script id="modetoggle" src="files/scripts/modetoggle.js"></script>
     <script id="loader" src="files/mods/loader.js"></script>
+    <script>
+        document.getElementById('file').addEventListener('change', function () {
+            const fileName = this.files.length ? this.files[0].name : "No file selected";
+            document.getElementById('fileNameDisplay').textContent = fileName;
+        });
+        document.querySelector('.fileUploadButton').addEventListener('click', function () {
+            document.getElementById('file').click();
+        });
+        const textarea = document.getElementById('messageInput');
+
+        function adjustHeight() {
+            // Höhe zurücksetzen, damit die Scrollhöhe korrekt berechnet wird
+            textarea.style.height = 'auto';
+            // Höhe basierend auf der Scrollhöhe setzen
+            textarea.style.height = `${textarea.scrollHeight}px`;
+        }
+        textarea.addEventListener('input', adjustHeight);
+        adjustHeight();
+    </script>
 </body>
 
 </html>

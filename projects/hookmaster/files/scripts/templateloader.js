@@ -12,9 +12,10 @@ loadButton.addEventListener('click', async (event) => {
       case "1":
          document.getElementById("webhookName").value = "AnnouncementBot";
          document.getElementById("avatarURL").value = "";
-         document.getElementById("messageContent").value = "# Important announcement:\n[your announcement here]";
+         document.getElementById("messageInput").value = "# Important announcement:\n[your announcement here]";
          break;
    }
+   adjustHeight();
 })
 
 // example template config
@@ -22,7 +23,7 @@ loadButton.addEventListener('click', async (event) => {
   case "x":
    document.getElementById("webhookName").value = "";
    document.getElementById("avatarURL").value = "";
-   document.getElementById("messageContent").value = "";
+   document.getElementById("messageInput").value = "";
    break;
 */
 

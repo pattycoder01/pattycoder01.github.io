@@ -8,6 +8,7 @@ importButton.addEventListener('click', async (event) => {
     document.getElementById("avatarURL").value = importedData.avatar;
     document.getElementById("messageContent").value = importedData.content;
     document.getElementById("ttsEnabled").checked = importedData.tts;
+    adjustHeight();
 })
 
 exportButton.addEventListener('click', async (event) => {

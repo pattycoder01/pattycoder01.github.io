@@ -1,42 +1,44 @@
-const sendButton = document.getElementById("sendMessage");
+const sendButton = document.getElementById("sendButton");
 
-sendButton.addEventListener('click', async (event) => {
-  const messageContent = document.getElementById("messageContent").value;
+sendButton.addEventListener('click', async () => {
+  const messageContent = document.getElementById("messageInput").value;
   const webhookName = document.getElementById("webhookName").value;
   const webhookURL = document.getElementById("webhookURL").value;
   const avatarURL = document.getElementById("avatarURL").value;
   const ttsEnabled = document.getElementById("ttsEnabled").checked;
+  const fileInput = document.getElementById("file");
 
-  const content = {};
+  if (!webhookURL) return alert("Die URL darf nicht leer sein!");
+  if (!messageContent && !fileInput.files.length) return alert("Die Nachricht oder Datei darf nicht leer sein!");
 
-  if (!webhookURL) return alert("The URL can't be empty!");
-  if (!messageContent) return alert("The message content cant be empty!");
+  const formData = new FormData();
+  formData.append("content", messageContent);
 
-  content.content = messageContent;
+  if (webhookName) formData.append("username", webhookName);
+  if (avatarURL) formData.append("avatar_url", avatarURL);
+  if (ttsEnabled) formData.append("tts", true);
 
-  if (webhookName) {
-    content.username = webhookName;
-  }
-
-  if (avatarURL) {
-    content.avatar_url = avatarURL;
-  }
-
-  if (ttsEnabled) {
-    content.tts = true;
+  if (fileInput.files.length) {
+    formData.append("file", fileInput.files[0]); // Die erste Datei wird angehängt
   }
 
   try {
     const request = await fetch(webhookURL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(content)
+      body: formData
     });
-    console.log("message sent successfully");
-    document.getElementById("messageContent").value = "";
-    document.getElementById("ttsEnabled").checked = false;
+
+    if (request.ok) {
+      console.log("Nachricht erfolgreich gesendet!");
+      document.getElementById("messageInput").value = "";
+      fileInput.value = "";
+      document.getElementById("ttsEnabled").checked = false;
+    } else {
+      throw new Error("Fehler beim Senden der Nachricht");
+    }
   } catch (error) {
-    console.warn("error occurred whilst sending message");
-    alert("error");
+    console.warn("Fehler beim Senden:", error);
+    alert("Fehler beim Senden!");
   }
-})
+  adjustHeight();
+});
