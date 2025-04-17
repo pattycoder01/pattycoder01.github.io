@@ -1,116 +1,333 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #2e2e2e;
-    color: #f0f0f0;
-    font-family: sans-serif;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: #e0e0e0;
+}
+
+/* Header */
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    text-align: center;
+    padding: 15px 30px;
+    background-color: rgba(30, 30, 30, 0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-h1 {
-    font-size: 72px;
-    margin: 0;
-    font-family: sans-serif;
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-h2 {
-    font-family: sans-serif;
-}
-
-h3 {
-    font-family: sans-serif;
-}
-
-p {
-    font-size: 24px;
-    font-family: sans-serif;
-}
-
-.btn {
-    background-color: crimson;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border: 2px solid crimson;
-    transition-duration: 0.2s;
-    margin-top: 20px;
-    font-family: sans-serif;
-}
-
-.btn:hover {
-    background-color: slateblue;
-    color: white;
-    border: 2px solid slateblue;
-    box-shadow: 5px 5px 10px darkslateblue;
-    transition-duration: 0.5s;
-}
-
-.linkbtn {
-    background-color: crimson;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border: 2px solid crimson;
-    transition-duration: 0.2s;
-    margin-top: 20px;
-    font-family: sans-serif;
-    width: 15%;
-    min-width: 250px;
-}
-
-.linkbtn:hover {
-    background-color: slateblue;
-    color: white;
-    border: 2px solid slateblue;
-    box-shadow: 5px 5px 10px darkslateblue;
-    transition-duration: 0.5s;
-}
-
-.container {
+.nav-list {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    padding: 0 20px;
-    font-family: sans-serif;
+    margin: 0 50px 0 0;
+    padding: 0;
 }
 
-.content {
-    max-width: 600px;
+.nav-list li {
+    margin: 0 5px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #7300ff;
+}
+
+/* Helden-Sektion */
+.herosection {
+    margin-top: 80px;
+    text-align: center;
+    align-content: center;
+    padding: 100px 20px;
+    height: 70lvh;
+}
+
+.herosection h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.herosection h3 {
+    font-size: 1.5rem;
+}
+
+/* Karten-Sektion – Horizontales Scrollen */
+.cards-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
     padding: 20px;
-    font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 48px;
+.cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #7300ff;
+    border-radius: 4px;
+}
+
+/* Karten-Design */
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
+    flex: 0 0 calc(25% - 20px);
+    min-width: 250px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Button in der Karte */
+.view-btn {
+    background-color: crimson;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.view-btn:hover {
+    background-color: #b20040;
+}
+
+/* Scroll-Buttons */
+.scroll-btn {
+    background-color: #7300ff;
+    border: none;
+    min-width: 40px;
+    min-height: 40px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.scroll-btn:hover {
+    background-color: #5c00cc;
+}
+
+.left-btn {
+    margin-right: 10px;
+}
+
+.right-btn {
+    margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-content .social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-content .social-icons a:hover {
+    color: #7300ff;
+}
+
+.notfound {
+    height: 100vh;
+    /* Die Sektion füllt die volle Höhe des Viewports aus */
+    display: flex;
+    flex-direction: column;
+    /* Inhalt wird vertikal ausgerichtet */
+    justify-content: center;
+    /* Zentriert den Inhalt vertikal */
+    align-items: center;
+    /* Zentriert den Inhalt horizontal */
+    text-align: center;
+}
+
+.notfound h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    /* Anpassung der Textfarbe */
+}
+
+.notfound h2 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+.aboutsection {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.aboutsection h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.contact {
+    padding-top: 10%;
+    text-align: center;
+    height: 75vh;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.contact textarea {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    resize: none;
+    border-radius: 5px;
+    border-color: #1e1e1e;
+    border-width: 5px;
+    border-style: solid;
+    height: 200px;
+    width: 30%;
+    min-width: 350px;
+    transition-duration: 1s;
+    outline: none;
+}
+
+.contact textarea:hover {
+    border-color: #3d3d3d;
+    border-width: 5px;
+    border-style: solid;
+    height: 200px;
+    width: 30%;
+    min-width: 350px;
+    transition-duration: 1s;
+}
+
+.contact button {
+    margin-top: 10px;
+    background-color: crimson;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #b20040;
+}
+
+/* Responsivität */
+@media screen and (max-width: 768px) {
+    .herosection h1 {
+        font-size: 2.5rem;
     }
 
-    p {
-        font-size: 18px;
+    .herosection h3 {
+        font-size: 1.2rem;
     }
 
-    .btn {
-        padding: 10px 24px;
-        font-size: 12px;
+    .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
     }
 
-    .container {
-        flex-direction: column;
-        ;
-        /* Stellt sicher, dass bei kleinen Bildschirmen vertikal ausgerichtet wird */
+    .nav-list a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        flex: 0 0 calc(100% - 20px);
     }
 }

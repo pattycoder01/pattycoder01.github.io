@@ -1,30 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/files/style.css">
-    <link rel="icon" href="/files/favicon.ico" type="image/x-icon">
-    <script src="/files/script.js"></script>
-    <title>
-        PattyCoder
-    </title>
-
+    <title>PattyCoder's Website</title>
+    <link rel="stylesheet" href="files/style.css">
+    <link rel="icon" href="files/logo.png" type="image/png">
 </head>
 
 <body>
-    <div class="container">
-        <h1>PattyCoders<br>Website</h1>
-        <div class="content">
-            <h2>Hi! I'm a small dev and this is my website!<br>
-                I have all my projects and links hosted on this page!<br></h2>
-            <a href="links.html" class="btn"><b>-> see links</b></a><span style="padding-left: 15px;"></span>
-            <a href="projects.html" class="btn"><b>-> see my projects</b></a><br>
-            <a href="https://forms.gle/cLzVmWzzfK291cWW8" class="btn"><b>-> send me stupid coding ideas<br>(they don't
-                    have to be stupid)</b></a>
+    <header class="header">
+        <div class="logo">PattyCoder</div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="herosection" id="home">
+        <h1>Hi, I am Patty</h1>
+        <h3 id="heroText">casually coding</h3>
+    </section>
+
+    <section class="aboutsection" id="about">
+        <div style="height: 60px;"></div>
+        <h2>About me</h2>
+        --- EN --- <br>
+        Hi, I'm Patty! <br>
+        A passionate male programmer with a love for gaming and all things tech. <br>
+        My curiosity drives me to explore the digital world, from artificial intelligence to immersive experiences in
+        VR. <br><br>
+
+        --- DE --- <br>
+        Hi, ich bin Patty! <br>
+        Ich programmiere gerne und liebe Videospiele und generell alles was mit Technik zu tun hat. <br>
+        Ich erforsche ständig die digitale Welt, von künstlicher Intelligenz bis hin zu immersiven Welten in VR. <br>
+    </section>
+
+    <section id="projects" class="cards-section">
+        <h2>Projects</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left-btn">&#8249;</button>
+            <div class="cards" id="cards-container">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Details about project 1.</p>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Details about project 2.</p>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>Details about project 3.</p>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card">
+                    <h3>Project 4</h3>
+                    <p>Details about project 4.</p>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="card">
+                    <h3>Project 5</h3>
+                    <p>Details about project 5.</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn">&#8250;</button>
         </div>
-    </div>
+    </section>
+
+    <section id="links" class="cards-section">
+        <h2>Links</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left-btn">&#8249;</button>
+            <div class="cards" id="links-container">
+                <div class="card">
+                    <h3>GitHub</h3>
+                    <p>Explore my GitHub projects.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://github.com/pattycoder01', '_blank');">Visit</button>
+                </div>
+                <div class="card">
+                    <h3>Spotify</h3>
+                    <p>Explore my Spotify playlists.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://open.spotify.com/user/316ntl3tpduqlbkkg6riwfbstzey', '_blank');">Visit</button>
+                </div>
+                <div class="card">
+                    <h3>Roblox</h3>
+                    <p>Explore my Roblox games.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://www.roblox.com/users/6016957437/profile', '_blank');">Visit</button>
+                </div>
+                <div class="card">
+                    <h3>Steam</h3>
+                    <p>Explore my Steam profile.</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://steamcommunity.com/id/pattycoder/', '_blank');">Visit</button>
+                </div>
+                <div class="card">
+                    <h3>unit.link</h3>
+                    <p>View me on unit.link</p>
+                    <button class="view-btn"
+                        onclick="window.open('https://unit.link/pattycoder', '_blank');">Visit</button>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn">&#8250;</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Find me on:</p>
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript für horizontales Scrollen -->
+    <script>
+        // Scroll-Buttons und Container für den Projekte-Bereich
+        const projectLeftBtn = document.querySelector('#projects .left-btn');
+        const projectRightBtn = document.querySelector('#projects .right-btn');
+        const projectCardsContainer = document.querySelector('#projects .cards');
+
+        projectLeftBtn.addEventListener('click', () => {
+            projectCardsContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        projectRightBtn.addEventListener('click', () => {
+            projectCardsContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        // Scroll-Buttons und Container für den Links-Bereich
+        const linksLeftBtn = document.querySelector('#links .left-btn');
+        const linksRightBtn = document.querySelector('#links .right-btn');
+        const linksCardsContainer = document.querySelector('#links .cards');
+
+        linksLeftBtn.addEventListener('click', () => {
+            linksCardsContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        linksRightBtn.addEventListener('click', () => {
+            linksCardsContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        // Liste mit möglichen Texten
+        const texts = ["Just chilling here!", "print('hello world!')", "Explore more!", "Anything is possible!", "Fascinating, right?", "Hello there!", "Hello world!"];
+        const element = document.getElementById("heroText");
+        const randomIndex = Math.floor(Math.random() * texts.length);
+        element.textContent = texts[randomIndex];
+    </script>
 </body>
 
 </html>
