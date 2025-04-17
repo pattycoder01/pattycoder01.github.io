@@ -9,7 +9,6 @@ body {
     color: #e0e0e0;
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -53,7 +52,6 @@ body {
     background-color: #7300ff;
 }
 
-/* Helden-Sektion */
 .herosection {
     margin-top: 80px;
     text-align: center;
@@ -71,7 +69,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* Karten-Sektion – Horizontales Scrollen */
 .cards-section {
     padding: 60px 20px;
     text-align: center;
@@ -107,7 +104,6 @@ body {
     border-radius: 4px;
 }
 
-/* Karten-Design */
 .card {
     background-color: #1e1e1e;
     padding: 20px;
@@ -137,7 +133,6 @@ body {
     line-height: 1.5;
 }
 
-/* Button in der Karte */
 .view-btn {
     background-color: crimson;
     border: none;
@@ -156,7 +151,6 @@ body {
     background-color: #b20040;
 }
 
-/* Scroll-Buttons */
 .scroll-btn {
     background-color: #7300ff;
     border: none;
@@ -185,7 +179,6 @@ body {
     margin-left: 10px;
 }
 
-/* Footer */
 .footer {
     background-color: #1e1e1e;
     padding: 20px;
@@ -212,14 +205,10 @@ body {
 
 .notfound {
     height: 100vh;
-    /* Die Sektion füllt die volle Höhe des Viewports aus */
     display: flex;
     flex-direction: column;
-    /* Inhalt wird vertikal ausgerichtet */
     justify-content: center;
-    /* Zentriert den Inhalt vertikal */
     align-items: center;
-    /* Zentriert den Inhalt horizontal */
     text-align: center;
 }
 
@@ -227,7 +216,6 @@ body {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #e0e0e0;
-    /* Anpassung der Textfarbe */
 }
 
 .notfound h2 {
@@ -302,7 +290,6 @@ body {
     background-color: #b20040;
 }
 
-/* Responsivität */
 @media screen and (max-width: 768px) {
     .herosection h1 {
         font-size: 2.5rem;
