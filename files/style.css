@@ -12,11 +12,9 @@ body {
 .header {
     display: flex;
     flex-wrap: wrap;
-    /* Ermöglicht Zeilenumbrüche */
     justify-content: space-between;
     align-items: center;
     padding: 30px 30px;
-    /* Erhöhte Polsterung für mehr Größe */
     background-color: rgba(30, 30, 30, 0.95);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -34,16 +32,10 @@ body {
 .nav-list {
     display: flex;
     flex-wrap: wrap;
-    /* Elemente aufteilen, falls nötig */
     margin: 20px 0;
-    /* Abstand nach oben und unten */
     padding: 0;
-    gap: 15px;
-    /* Abstand zwischen den Navigationselementen */
     justify-content: center;
-    /* Zentrierung der Navigationselemente */
     width: 100%;
-    /* Volle Breite */
 }
 
 .nav-list li {
@@ -55,15 +47,17 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.2rem;
-    /* Größere Schriftart für die Navigationselemente */
     padding: 12px 20px;
-    /* Erhöhte Polsterung */
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 .nav-list a:hover {
     background-color: #7300ff;
+}
+
+.nav-list li::marker {
+    content: none;
 }
 
 .herosection {
