@@ -5,8 +5,16 @@
 </head>
 
 <body>
-    redirecting...
-    <script>window.location.href = "unavailable.html"</script>
+    redirecting... <br>
+    click <a href="site.html">here</a> if not redirecting.
+    <script>
+        status = true;
+        if (status == true) {
+            window.location.href = "site.html"
+        } else {
+            window.location.href = "unavailable.html"
+        }
+    </script>
 </body>
 
 </html>
