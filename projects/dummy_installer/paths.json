@@ -18,5 +18,65 @@
         "name": "PvZ Replanted",
         "parent_folder": "PVZ Replanted",
         "file_name": "replanted.exe"
+    },
+    {
+        "name": "GTA V",
+        "parent_folder": "Grand Theft Auto V",
+        "file_name": "GTA5.exe"
+    },
+    {
+        "name": "Valorant",
+        "parent_folder": "Win64",
+        "file_name": "VALORANT-Win64-Shipping.exe"
+    },
+    {
+        "name": "Minecraft",
+        "parent_folder": "Content",
+        "file_name": "minecraft.exe"
+    },
+    {
+        "name": "CS2",
+        "parent_folder": "win64",
+        "file_name": "cs2.exe"
+    },
+    {
+        "name": "CS:GO",
+        "parent_folder": "win64",
+        "file_name": "csgo.exe"
+    },
+    {
+        "name": "Portal",
+        "parent_folder": "Portal",
+        "file_name": "hl2.exe"
+    },
+    {
+        "name": "Portal 2",
+        "parent_folder": "Portal 2",
+        "file_name": "portal2.exe"
+    },
+    {
+        "name": "R.E.P.O.",
+        "parent_folder": "REPO",
+        "file_name": "REPO.exe"
+    },
+    {
+        "name": "Schedule I",
+        "parent_folder": "Schedule I",
+        "file_name": "Schedule I.exe"
+    },
+    {
+        "name": "VRoid Studio",
+        "parent_folder": "VRoid Studio",
+        "file_name": "VRoidStudio.exe"
+    },
+    {
+        "name": "Doki Doki Literature Club",
+        "parent_folder": "DDLC",
+        "file_name": "ddlc.exe"
+    },
+    {
+        "name": "Needy Girl Overdose",
+        "parent_folder": "NEEDY GIRL OVERDOSE",
+        "file_name": "Windose.exe"
     }
 ]
