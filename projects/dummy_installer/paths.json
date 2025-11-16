@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Marvel Rivals",
+        "parent_folder": "Win64",
+        "file_name": "Marvel-Win64-Shipping.exe"
+    },
+    {
+        "name": "Fortnite",
+        "parent_folder": "Win64",
+        "file_name": "FortniteClient-Win64-Shipping.exe"
+    },
+    {
+        "name": "Where Winds Meet",
+        "parent_folder": "Win64",
+        "file_name": "wwm.exe"
+    },
+    {
+        "name": "PvZ Replanted",
+        "parent_folder": "PVZ Replanted",
+        "file_name": "replanted.exe"
+    }
+]
