@@ -78,5 +78,110 @@
         "name": "Needy Girl Overdose",
         "parent_folder": "NEEDY GIRL OVERDOSE",
         "file_name": "Windose.exe"
+    },
+    {
+        "name": "Half-Life",
+        "parent_folder": "Half-Life",
+        "file_name": "hl.exe"
+    },
+    {
+        "name": "Counter-Strike: Source",
+        "parent_folder": "Counter-Strike Source",
+        "file_name": "hl2.exe"
+    },
+    {
+        "name": "Garry's Mod",
+        "parent_folder": "GarrysMod",
+        "file_name": "gmod.exe"
+    },
+    {
+        "name": "Elden Ring",
+        "parent_folder": "Game",
+        "file_name": "eldenring.exe"
+    },
+    {
+        "name": "Baldur's Gate 3",
+        "parent_folder": "bin",
+        "file_name": "bg3.exe"
+    },
+    {
+        "name": "Cyberpunk 2077",
+        "parent_folder": "x64",
+        "file_name": "Cyberpunk2077.exe"
+    },
+    {
+        "name": "Hollow Knight",
+        "parent_folder": "Hollow Knight",
+        "file_name": "hollow_knight.exe"
+    },
+    {
+        "name": "Stardew Valley",
+        "parent_folder": "Stardew Valley",
+        "file_name": "Stardew Valley.exe"
+    },
+    {
+        "name": "Dark Souls 3",
+        "parent_folder": "Game",
+        "file_name": "DarkSoulsIII.exe"
+    },
+    {
+        "name": "The Witcher 3",
+        "parent_folder": "x64",
+        "file_name": "witcher3.exe"
+    },
+    {
+        "name": "Terraria",
+        "parent_folder": "Terraria",
+        "file_name": "Terraria.exe"
+    },
+    {
+        "name": "Hades",
+        "parent_folder": "Hades",
+        "file_name": "Hades.exe"
+    },
+    {
+        "name": "Red Dead Redemption 2",
+        "parent_folder": "Red Dead Redemption 2",
+        "file_name": "RDR2.exe"
+    },
+    {
+        "name": "Subnautica",
+        "parent_folder": "Subnautica",
+        "file_name": "Subnautica.exe"
+    },
+    {
+        "name": "ARK: Survival Evolved",
+        "parent_folder": "Win64",
+        "file_name": "ShooterGame.exe"
+    },
+    {
+        "name": "Rust",
+        "parent_folder": "Rust",
+        "file_name": "RustClient.exe"
+    },
+    {
+        "name": "Don't Starve Together",
+        "parent_folder": "bin",
+        "file_name": "dontstarve_steam.exe"
+    },
+    {
+        "name": "The Forest",
+        "parent_folder": "TheForest",
+        "file_name": "TheForest.exe"
+    },
+    {
+        "name": "Cuphead",
+        "parent_folder": "Cuphead",
+        "file_name": "Cuphead.exe"
+    },
+    {
+        "name": "Persona 5 Royal",
+        "parent_folder": "P5R",
+        "file_name": "p5r.exe"
+    },
+    {
+        "name": "Sekiro",
+        "parent_folder": "Sekiro",
+        "file_name": "Sekiro.exe"
     }
 ]
