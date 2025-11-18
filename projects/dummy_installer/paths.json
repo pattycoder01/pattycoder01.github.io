@@ -183,5 +183,10 @@
         "name": "Sekiro",
         "parent_folder": "Sekiro",
         "file_name": "Sekiro.exe"
+    }.
+    {
+        "name": "Comet Browser",
+        "parent_folder": "Application",
+        "file_name": "comet.exe"
     }
 ]
