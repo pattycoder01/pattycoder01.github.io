@@ -186,7 +186,7 @@
     },
     {
         "name": "Comet Browser",
-        "parent_folder": "Application",
+        "parent_folder": "Comet/Application",
         "file_name": "comet.exe"
     }
 ]
