@@ -188,5 +188,10 @@
         "name": "Comet Browser",
         "parent_folder": "Comet/Application",
         "file_name": "comet.exe"
+    },
+    {
+        "name": "Risk of Rain 2: Alloyed Collective",
+        "parent_folder": "Risk of Rain 2",
+        "file_name": "Risk of Rain 2.exe"
     }
 ]
