@@ -317,7 +317,7 @@ To quickly set up multiple games:
 ### Resource Usage
 
 Dummy processes use minimal resources:
-- Less than 1MB RAM per process
+- About 10MB RAM per process
 - No CPU usage when idle
 - No network activity
 - Safe to run many simultaneously
