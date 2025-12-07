@@ -198,5 +198,10 @@
         "name": "Delta Force",
         "parent_folder": "Win64",
         "file_name": "DeltaForceClient-Win64-Shipping.exe"
+    },
+    {
+        "name": "Terminull Brigade",
+        "parent_folder": "Win64",
+        "file_name": "Rouge-Win64-Shipping.exe"
     }
 ]
