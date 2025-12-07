@@ -203,5 +203,11 @@
         "name": "Terminull Brigade",
         "parent_folder": "Win64",
         "file_name": "Rouge-Win64-Shipping.exe"
+    },
+    {
+        "name": "Storm Lancers' Demo",
+        "parent_folder": "Storm Lancers Demo",
+        "file_name": "StormLancersDemo.exe"
     }
+
 ]
