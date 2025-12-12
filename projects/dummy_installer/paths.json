@@ -208,6 +208,10 @@
         "name": "Storm Lancers' Demo",
         "parent_folder": "Storm Lancers Demo",
         "file_name": "StormLancersDemo.exe"
+    },
+    {
+        "name": "PRAGMATA SKETCHBOOK",
+        "parent_folder": "PRAGMATA SKETCHBOOK",
+        "file_name": "PRAGMATA_SKETCHBOOK.exe"
     }
-
 ]
