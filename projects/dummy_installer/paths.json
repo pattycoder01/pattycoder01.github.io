@@ -213,5 +213,10 @@
         "name": "PRAGMATA SKETCHBOOK",
         "parent_folder": "PRAGMATA SKETCHBOOK",
         "file_name": "PRAGMATA_SKETCHBOOK.exe"
+    },
+    {
+        "name": "Arc Raiders",
+        "parent_folder": "Arc Raiders",
+        "file_name": "PioneerGame.exe"
     }
 ]
