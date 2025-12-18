@@ -218,5 +218,10 @@
         "name": "Arc Raiders",
         "parent_folder": "Arc Raiders",
         "file_name": "PioneerGame.exe"
+    },
+    {
+        "name": "Fallout 76",
+        "parent_folder": "Fallout76",
+        "file_name": "Fallout76.exe"
     }
 ]
