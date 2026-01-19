@@ -233,5 +233,10 @@
         "name": "Blue Protocol: Star Resonance",
         "parent_folder": "bpsr",
         "file_name": "BPSR_STEAM.exe"
+    },
+    {
+        "name": "Arena Breakout: Infinite",
+        "parent_folder": "ABInfinite/Binaries/Win64",
+        "file_name": "UAGame.exe"
     }
 ]
