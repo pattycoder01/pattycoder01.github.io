@@ -223,5 +223,15 @@
         "name": "Fallout 76",
         "parent_folder": "Fallout76",
         "file_name": "Fallout76.exe"
+    },
+    {
+        "name": "Torchlight: Infinite",
+        "parent_folder": "Win64",
+        "file_name": "torchlight_infinite.exe"
+    },
+    {
+        "name": "Blue Protocol: Star Resonance",
+        "parent_folder": "bpsr",
+        "file_name": "BPSR_STEAM.exe"
     }
 ]
