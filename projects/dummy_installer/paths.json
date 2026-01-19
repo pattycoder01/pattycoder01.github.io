@@ -236,7 +236,7 @@
     },
     {
         "name": "Arena Breakout: Infinite",
-        "parent_folder": "ABInfinite/Binaries/Win64",
+        "parent_folder": "Win64",
         "file_name": "UAGame.exe"
     }
 ]
