@@ -238,5 +238,10 @@
         "name": "Arena Breakout: Infinite",
         "parent_folder": "Win64",
         "file_name": "UAGame.exe"
+    },
+    {
+        "name": "League of Legends",
+        "parent_folder": "Game",
+        "file_name": "League of Legends.exe"
     }
 ]
