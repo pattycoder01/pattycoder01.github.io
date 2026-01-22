@@ -243,5 +243,10 @@
         "name": "League of Legends",
         "parent_folder": "Game",
         "file_name": "League of Legends.exe"
+    },
+    {
+        "name": "Once Human",
+        "parent_folder": "Once Human",
+        "file_name": "ONCE_HUMAN.exe"
     }
 ]
