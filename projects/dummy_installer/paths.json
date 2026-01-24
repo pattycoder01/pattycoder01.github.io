@@ -248,5 +248,10 @@
         "name": "Once Human",
         "parent_folder": "Once Human",
         "file_name": "ONCE_HUMAN.exe"
+    },
+    {
+        "name": "Arknights:Endfield",
+        "parent_folder": "Game",
+        "file_name": "Endfield.exe"
     }
 ]
