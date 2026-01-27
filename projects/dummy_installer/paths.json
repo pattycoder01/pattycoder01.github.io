@@ -253,5 +253,10 @@
         "name": "Arknights:Endfield",
         "parent_folder": "Game",
         "file_name": "Endfield.exe"
+    },
+    {
+        "name": "Highguard",
+        "parent_folder": "Win64",
+        "file_name": "HighguardClient-Win64-Shipping.exe"
     }
 ]
