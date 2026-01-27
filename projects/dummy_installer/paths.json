@@ -258,5 +258,15 @@
         "name": "Highguard",
         "parent_folder": "Win64",
         "file_name": "HighguardClient-Win64-Shipping.exe"
+    },
+    {
+        "name": "2XKO",
+        "parent_folder": "2XKO/Live/Lion/Binaries/Win64",
+        "file_name": "Lion-Win64-Shipping.exe"
+    },
+    {
+        "name": "World of Warcraft",
+        "parent_folder": "_retail_",
+        "file_name": "WoW.exe"
     }
 ]
