@@ -268,5 +268,10 @@
         "name": "World of Warcraft",
         "parent_folder": "_retail_",
         "file_name": "WoW.exe"
+    },
+        {
+        "name": "Summoners War",
+        "parent_folder": "Summoners War",
+        "file_name": "SummonersWar.exe"
     }
 ]
