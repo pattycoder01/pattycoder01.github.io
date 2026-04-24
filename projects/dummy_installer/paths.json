@@ -273,5 +273,20 @@
         "name": "Summoners War",
         "parent_folder": "Summoners War",
         "file_name": "SummonersWar.exe"
+    },
+    {
+        "name": "NIKKE",
+        "parent_folder": "Game",
+        "file_name": "nikke.exe"
+    },
+    {
+        "name": "skate.",
+        "parent_folder": "skate",
+        "file_name": "skate.exe"
+    },
+    {
+        "name": "Honkai: Star Rail",
+        "parent_folder": "Games",
+        "file_name": "StarRail.exe"
     }
 ]
