@@ -288,5 +288,15 @@
         "name": "Honkai: Star Rail",
         "parent_folder": "Games",
         "file_name": "StarRail.exe"
+    },
+    {
+        "name": "NTE",
+        "parent_folder": "Win64",
+        "file_name": "HTGame.exe"
+    },
+    {
+        "name": "Genshin Impact",
+        "parent_folder": "Genshin Impact game",
+        "file_name": "GenshinImpact.exe"
     }
 ]
