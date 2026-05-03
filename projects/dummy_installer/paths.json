@@ -298,5 +298,30 @@
         "name": "Genshin Impact",
         "parent_folder": "Genshin Impact game",
         "file_name": "GenshinImpact.exe"
+    },
+        {
+        "name": "Path of Exile 2",
+        "parent_folder": "Path of Exile 2",
+        "file_name": "pathofexile.exe"
+    },
+    {
+        "name": "PUBG",
+        "parent_folder": "Win64",
+        "file_name": "TslGame.exe"
+    },
+    {
+        "name": "Hunt: Showdown 1896",
+        "parent_folder": "win_x64",
+        "file_name": "HuntGame.exe"
+    },
+    {
+        "name": "RAID: Shadow Legends",
+        "parent_folder": "build",
+        "file_name": "Raid.exe"
+    },
+    {
+        "name": "Vindictus",
+        "parent_folder": "Vindictus",
+        "file_name": "Vindictus.exe"
     }
 ]
