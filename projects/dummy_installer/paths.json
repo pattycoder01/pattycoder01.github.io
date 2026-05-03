@@ -269,7 +269,7 @@
         "parent_folder": "_retail_",
         "file_name": "WoW.exe"
     },
-        {
+    {
         "name": "Summoners War",
         "parent_folder": "Summoners War",
         "file_name": "SummonersWar.exe"
@@ -299,7 +299,7 @@
         "parent_folder": "Genshin Impact game",
         "file_name": "GenshinImpact.exe"
     },
-        {
+    {
         "name": "Path of Exile 2",
         "parent_folder": "Path of Exile 2",
         "file_name": "pathofexile.exe"
